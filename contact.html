@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Risha Hermain</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Form -->
+    <main>
+        <section class="contact-section">
+            <h1>Contact Me</h1>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="formMessage" style="color: green; font-weight: bold; display: none;">Message sent successfully!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Risha Hermain</p>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $('#contactForm').on('submit', function(e){
+                e.preventDefault();
+                $('#formMessage').fadeIn().delay(2000).fadeOut();
+                $('#contactForm')[0].reset();
+            });
+        });
+    </script>
+</body>
+</html>
