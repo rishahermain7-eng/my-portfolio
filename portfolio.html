@@ -1,45 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Risha Hermain</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Risha Hermain</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Header / Navbar -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="portfolio.html" class="active">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="site">
+    <div class="card">
+      <header class="header">
+        <div class="avatar">RH</div>
+        <div class="header-info">
+          <div class="name">Risha Hermain</div>
+          <div class="role">Selected Projects</div>
+          <div class="meta">A small showcase of web projects and applications.</div>
+        </div>
+        <div class="header-actions">
+          <a href="index.html" class="btn">Home</a>
+          <a href="resume.html" class="btn secondary">Resume</a>
+        </div>
+      </header>
 
-    <!-- Portfolio Content -->
-    <main>
-        <section class="portfolio-section">
-            <h1>Projects</h1>
-            <div class="project-card">
-                <h2>Stock Visualization App</h2>
-                <p>Developed a desktop app to visualize stock data using Python and C++.</p>
-            </div>
-            <div class="project-card">
-                <h2>Resume Analyzer Web App</h2>
-                <p>AI-powered web application to analyze resumes and compare with job descriptions.</p>
-            </div>
-            <div class="project-card">
-                <h2>Mental Health Chatbot</h2>
-                <p>Python-based chatbot to provide supportive mental health responses using NLP.</p>
-            </div>
-        </section>
-    </main>
+      <div class="main-grid">
+        <div>
+          <section class="section">
+            <div class="section-title">Featured Projects</div>
+            <div class="box">
+              <div class="project-card">
+                <h4>Registration App (PHP/MySQL)</h4>
+                <p>A full registration & login system with password hashing, sessions, and a neat UI.</p>
+                <p style="color:var(--muted);font-size:13px;margin-top:8px">Tech: PHP, MySQL, JS, CSS</p>
+              </div>
 
-    <footer>
-        <p>&copy; 2025 Risha Hermain</p>
-    </footer>
+              <div class="project-card">
+                <h4>Resume Analyzer (Prototype)</h4>
+                <p>Simple prototype to parse and score resumes against job descriptions (demo).</p>
+                <p style="color:var(--muted);font-size:13px;margin-top:8px">Tech: JS, Python (backend idea)</p>
+              </div>
+
+              <div class="project-card">
+                <h4>Personal Portfolio (This Site)</h4>
+                <p>Static portfolio with dark modern theme built with HTML/CSS and minimal JavaScript.</p>
+                <p style="color:var(--muted);font-size:13px;margin-top:8px">Tech: HTML, CSS, JS</p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <aside class="sidebar">
+          <div class="box">
+            <div class="section-title">Get in touch</div>
+            <div class="contact-item"><i class="fa fa-envelope"></i> risha@example.com</div>
+            <div style="height:12px"></div>
+            <a href="contact.html" class="btn">Contact Me</a>
+          </div>
+
+          <div class="box">
+            <div class="section-title">Links</div>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <a href="#" class="btn secondary" style="text-decoration:none">GitHub</a>
+              <a href="#" class="btn secondary" style="text-decoration:none">LinkedIn</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <div class="site-footer">© 2025 Risha Hermain</div>
+  </div>
 </body>
 </html>

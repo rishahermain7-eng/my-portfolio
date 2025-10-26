@@ -1,49 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Risha Hermain</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resume — Risha Hermain</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Header / Navbar -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html" class="active">Resume</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="site">
+    <div class="card">
+      <header class="header">
+        <div class="avatar">RH</div>
+        <div class="header-info">
+          <div class="name">Risha Hermain</div>
+          <div class="role">Full-stack Developer</div>
+          <div class="meta">Email: risha@example.com · Phone: +91 1234567890</div>
+        </div>
+        <div class="header-actions">
+          <a href="index.html" class="btn">Home</a>
+          <a href="portfolio.html" class="btn secondary">Portfolio</a>
+        </div>
+      </header>
 
-    <!-- Resume Content -->
-    <main>
-        <section class="resume-section">
-            <h1>Education</h1>
-            <p>Bachelor of Computer Science - XYZ University (2021-2025)</p>
-        </section>
+      <div class="main-grid">
+        <div>
+          <section class="section">
+            <div class="section-title">Professional Summary</div>
+            <div class="box">
+              <p class="muted">A passionate web developer with experience building PHP/MySQL backends and interactive frontends. Focused on clean code and user-friendly UIs.</p>
+            </div>
+          </section>
 
-        <section class="resume-section">
-            <h1>Skills</h1>
-            <ul>
-                <li>HTML, CSS, JavaScript, jQuery</li>
-                <li>PHP & MySQL</li>
-                <li>Python & Data Analysis</li>
-                <li>React & Web Development</li>
-            </ul>
-        </section>
+          <section class="section">
+            <div class="section-title">Work Experience</div>
+            <div class="box">
+              <div class="exp-box">
+                <div class="left">
+                  <h3>Web Developer Intern — ABC Company</h3>
+                  <div class="meta">Jun 2024 — Aug 2024</div>
+                  <p>Built registration/login flows, integrated MySQL, and improved UI/UX for the admin panel.</p>
+                </div>
+              </div>
 
-        <section class="resume-section">
-            <h1>Work Experience</h1>
-            <p>Intern - ABC Company, Web Development (June 2024 - Aug 2024)</p>
-        </section>
-    </main>
+              <div class="exp-box">
+                <div class="left">
+                  <h3>Freelance Web Projects</h3>
+                  <div class="meta">2023 — Present</div>
+                  <p>Built small business websites and landing pages using HTML/CSS/JS and basic PHP forms.</p>
+                </div>
+              </div>
+            </div>
+          </section>
 
-    <footer>
-        <p>&copy; 2025 Risha Hermain</p>
-    </footer>
+          <section class="section">
+            <div class="section-title">Education</div>
+            <div class="box">
+              <div class="edu-box">
+                <h3>B.Sc. Computer Science — XYZ University</h3>
+                <div class="meta">2021 — 2025</div>
+                <p>Relevant coursework: Web Development, Data Structures, Databases.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="section-title">Skills</div>
+            <div class="box">
+              <div class="skills-grid" style="display:flex;flex-wrap:wrap;gap:10px">
+                <span class="skill-pill">HTML</span>
+                <span class="skill-pill">CSS</span>
+                <span class="skill-pill">JavaScript</span>
+                <span class="skill-pill">jQuery</span>
+                <span class="skill-pill">PHP</span>
+                <span class="skill-pill">MySQL</span>
+                <span class="skill-pill">Git</span>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <aside class="sidebar">
+          <div class="box">
+            <div class="section-title" style="margin-bottom:10px">Contact</div>
+            <div class="contact-list">
+              <div class="contact-item"><i class="fa fa-envelope"></i> risha@example.com</div>
+              <div class="contact-item"><i class="fa fa-phone"></i> +91 1234567890</div>
+              <div class="contact-item"><i class="fa fa-map-marker-alt"></i> City, Country</div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="section-title" style="margin-bottom:10px">Download</div>
+            <a href="#" class="btn">Download CV (PDF)</a>
+          </div>
+
+          <div class="box">
+            <div class="section-title" style="margin-bottom:10px">Languages</div>
+            <div style="color:var(--muted)">English • Hindi</div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <div class="site-footer">© 2025 Risha Hermain</div>
+  </div>
 </body>
 </html>

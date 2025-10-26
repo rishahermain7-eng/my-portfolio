@@ -1,39 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Risha's Resume</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home — Risha Hermain</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Header / Navbar -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="site">
+    <div class="card">
+      <header class="header">
+        <div class="avatar">RH</div>
+        <div class="header-info">
+          <div class="name">Risha Hermain</div>
+          <div class="role">Web Developer • Student • Portfolio</div>
+          <div class="meta">Full-stack web dev • PHP & MySQL • JS, React basics • Open to internships</div>
+        </div>
 
-    <!-- Main Content -->
-    <main>
-        <section class="about">
-            <img src="images/profile.jpg" alt="Profile Picture">
-            <h1>Risha Hermain</h1>
-            <p>Web Developer | Programmer | Student</p>
-        </section>
-    </main>
+        <div class="header-actions">
+          <a href="resume.html" class="btn">Resume</a>
+          <a href="portfolio.html" class="btn secondary">Projects</a>
+        </div>
+      </header>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Risha Hermain</p>
-    </footer>
+      <div class="main-grid">
+        <!-- left column -->
+        <div>
+          <section class="section">
+            <div class="section-title">About</div>
+            <div class="box">
+              <p style="color:var(--muted);">
+                I build web apps and simple backend systems. I enjoy creating clean UI and working with PHP & JavaScript.
+                This site contains my resume, projects, and contact details.
+              </p>
+            </div>
+          </section>
 
-    <script src="js/script.js"></script>
+          <section class="section">
+            <div class="section-title">Experience</div>
+            <div class="box">
+              <div class="job">
+                <div class="left">
+                  <h3>Web Developer Intern — ABC Company</h3>
+                  <p class="meta">Jun 2024 — Aug 2024 • Remote</p>
+                  <p>Worked on a small PHP/MySQL app, built user auth, and improved UI using modern CSS.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="section-title">Skills</div>
+            <div class="box">
+              <div class="skills-grid">
+                <span class="skill-pill">HTML</span>
+                <span class="skill-pill">CSS</span>
+                <span class="skill-pill">JavaScript</span>
+                <span class="skill-pill">jQuery</span>
+                <span class="skill-pill">PHP</span>
+                <span class="skill-pill">MySQL</span>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- right column (sidebar) -->
+        <aside class="sidebar">
+          <div class="box">
+            <div class="section-title" style="margin-bottom:10px">Contact</div>
+            <div class="contact-list">
+              <div class="contact-item"><i class="fa fa-envelope"></i> risha@example.com</div>
+              <div class="contact-item"><i class="fa fa-phone"></i> +91 1234567890</div>
+              <div class="contact-item"><i class="fa fa-map-marker-alt"></i> City, Country</div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="section-title" style="margin-bottom:10px">Quick Links</div>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <a href="resume.html" class="btn" style="text-decoration:none;display:inline-block">View Resume</a>
+              <a href="biodata.html" class="btn" style="text-decoration:none;display:inline-block">View Biodata</a>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="section-title" style="margin-bottom:10px">Languages</div>
+            <div style="color:var(--muted)">English • Hindi</div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <div class="site-footer">© 2025 Risha Hermain · Built with HTML/CSS/JS</div>
+  </div>
 </body>
 </html>
