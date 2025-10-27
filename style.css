@@ -192,6 +192,30 @@ body{
 }
 .contact-form textarea { min-height:110px; resize:vertical; }
 
+:root {
+  --bg:#0a1422;
+  --card:#101b2d;
+  --muted:#a9b6c9;
+  --accent:#66e1c8;
+  --accent-2:#7ab8ff;
+}
+body {
+  background: linear-gradient(180deg,#0a1422 0%,#16213d 100%);
+  color:#f2f6fb;
+  font-family:"Inter","Poppins",system-ui,sans-serif;
+  line-height:1.5;
+  padding:30px 18px;
+}
+.avatar-img img {
+  width:140px;
+  height:140px;
+  border-radius:12px;
+  object-fit:cover;
+  box-shadow:0 6px 20px rgba(0,0,0,0.4);
+}
+
+
+
 /* footer */
 .site-footer {
   text-align:center;

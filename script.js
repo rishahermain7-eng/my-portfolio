@@ -1,18 +1,25 @@
 $(document).ready(function() {
-    // Smooth scroll to sections (if needed)
-    $('a').on('click', function(event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            const hash = this.hash;
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800);
-        }
-    });
+  // Smooth scrolling for all internal links
+  $('a[href^="#"]').on('click', function(event) {
+    const target = this.hash;
+    if (target) {
+      event.preventDefault();
+      $('html, body').animate({ scrollTop: $(target).offset().top }, 700);
+    }
+  });
 
-    // Example: Highlight active navbar
-    $('nav ul li a').click(function() {
-        $('nav ul li a').removeClass('active');
-        $(this).addClass('active');
-    });
+  // Contact form: store data locally
+  $('#contactForm').on('submit', function(e) {
+    e.preventDefault();
+    const name = $('input[name="name"]').val();
+    const email = $('input[name="email"]').val();
+    const message = $('textarea[name="message"]').val();
+    const existing = JSON.parse(localStorage.getItem('messages') || '[]');
+
+    existing.push({ name, email, message, date: new Date().toLocaleString() });
+    localStorage.setItem('messages', JSON.stringify(existing));
+
+    $('#msg').fadeIn().delay(1500).fadeOut();
+    $(this).trigger('reset');
+  });
 });

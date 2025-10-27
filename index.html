@@ -6,16 +6,20 @@
   <title>Home — Risha Hermain</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
   <div class="site">
     <div class="card">
       <header class="header">
-        <div class="avatar">RH</div>
+        <div class="avatar-img">
+          <img src="https://i.ibb.co/5hWnK3V/profile-placeholder.jpg" alt="Risha Hermain">
+        </div>
         <div class="header-info">
           <div class="name">Risha Hermain</div>
-          <div class="role">Web Developer • Student • Portfolio</div>
-          <div class="meta">Full-stack web dev • PHP & MySQL • JS, React basics • Open to internships</div>
+          <div class="role">Web Developer • Student</div>
+          <div class="meta">HTML • CSS • JavaScript • jQuery</div>
         </div>
 
         <div class="header-actions">
@@ -25,28 +29,13 @@
       </header>
 
       <div class="main-grid">
-        <!-- left column -->
         <div>
           <section class="section">
-            <div class="section-title">About</div>
+            <div class="section-title">About Me</div>
             <div class="box">
               <p style="color:var(--muted);">
-                I build web apps and simple backend systems. I enjoy creating clean UI and working with PHP & JavaScript.
-                This site contains my resume, projects, and contact details.
+                I am a Computer Science student passionate about creating web applications and learning full-stack development. This site includes my resume, biodata, and portfolio.
               </p>
-            </div>
-          </section>
-
-          <section class="section">
-            <div class="section-title">Experience</div>
-            <div class="box">
-              <div class="job">
-                <div class="left">
-                  <h3>Web Developer Intern — ABC Company</h3>
-                  <p class="meta">Jun 2024 — Aug 2024 • Remote</p>
-                  <p>Worked on a small PHP/MySQL app, built user auth, and improved UI using modern CSS.</p>
-                </div>
-              </div>
             </div>
           </section>
 
@@ -58,41 +47,23 @@
                 <span class="skill-pill">CSS</span>
                 <span class="skill-pill">JavaScript</span>
                 <span class="skill-pill">jQuery</span>
-                <span class="skill-pill">PHP</span>
-                <span class="skill-pill">MySQL</span>
               </div>
             </div>
           </section>
         </div>
 
-        <!-- right column (sidebar) -->
         <aside class="sidebar">
           <div class="box">
-            <div class="section-title" style="margin-bottom:10px">Contact</div>
-            <div class="contact-list">
-              <div class="contact-item"><i class="fa fa-envelope"></i> risha@example.com</div>
-              <div class="contact-item"><i class="fa fa-phone"></i> +91 1234567890</div>
-              <div class="contact-item"><i class="fa fa-map-marker-alt"></i> City, Country</div>
-            </div>
-          </div>
-
-          <div class="box">
-            <div class="section-title" style="margin-bottom:10px">Quick Links</div>
-            <div style="display:flex;flex-direction:column;gap:8px">
-              <a href="resume.html" class="btn" style="text-decoration:none;display:inline-block">View Resume</a>
-              <a href="biodata.html" class="btn" style="text-decoration:none;display:inline-block">View Biodata</a>
-            </div>
-          </div>
-
-          <div class="box">
-            <div class="section-title" style="margin-bottom:10px">Languages</div>
-            <div style="color:var(--muted)">English • Hindi</div>
+            <div class="section-title">Quick Links</div>
+            <a href="resume.html" class="btn">Resume</a>
+            <a href="biodata.html" class="btn secondary">Biodata</a>
+            <a href="contact.html" class="btn">Contact</a>
           </div>
         </aside>
       </div>
     </div>
 
-    <div class="site-footer">© 2025 Risha Hermain · Built with HTML/CSS/JS</div>
+    <div class="site-footer">© 2025 Risha Hermain</div>
   </div>
 </body>
 </html>

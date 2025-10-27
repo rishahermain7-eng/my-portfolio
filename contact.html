@@ -5,18 +5,19 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contact — Risha Hermain</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
   <div class="site">
     <div class="card">
       <header class="header">
-        <div class="avatar">RH</div>
+        <div class="avatar-img">
+          <img src="https://i.ibb.co/5hWnK3V/profile-placeholder.jpg" alt="Risha Hermain">
+        </div>
         <div class="header-info">
           <div class="name">Contact</div>
-          <div class="role">Get in touch</div>
-          <div class="meta">Send a message and I will respond to your email</div>
+          <div class="role">Get in Touch</div>
         </div>
         <div class="header-actions">
           <a href="index.html" class="btn">Home</a>
@@ -27,40 +28,21 @@
       <div class="main-grid">
         <div>
           <section class="section">
-            <div class="section-title">Send a message</div>
+            <div class="section-title">Send a Message</div>
             <div class="box contact-form">
               <form id="contactForm">
                 <input type="text" name="name" placeholder="Your name" required>
                 <input type="email" name="email" placeholder="Your email" required>
                 <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
+                <button type="submit" class="btn">Send</button>
               </form>
-              <p id="msg" style="color:var(--accent);display:none;margin-top:10px">Message sent (demo).</p>
+              <p id="msg" style="color:var(--accent);display:none;margin-top:10px">Message stored locally!</p>
             </div>
           </section>
         </div>
-
-        <aside class="sidebar">
-          <div class="box">
-            <div class="section-title">Contact Info</div>
-            <div class="contact-item"><i class="fa fa-envelope"></i> risha@example.com</div>
-            <div class="contact-item"><i class="fa fa-phone"></i> +91 1234567890</div>
-            <div style="height:10px"></div>
-            <p style="color:var(--muted);font-size:13px">This form is a front-end demo. To receive messages, wire it to a backend or email service.</p>
-          </div>
-        </aside>
       </div>
     </div>
-
     <div class="site-footer">© 2025 Risha Hermain</div>
   </div>
-
-  <script>
-    $('#contactForm').on('submit', function(e){
-      e.preventDefault();
-      $('#msg').fadeIn().delay(1600).fadeOut();
-      $(this).trigger('reset');
-    });
-  </script>
 </body>
 </html>
